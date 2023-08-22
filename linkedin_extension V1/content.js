@@ -44,7 +44,7 @@ function handleCommentButtonClick(event) {
 
 async function generateComment(postContent, buttonElement) {
   try {
-      const response = await fetch('http://localhost:3000/analyze-text', {
+      const response = await fetch('https://linkassistant-091e1f34e752.herokuapp.com/analyze-text', {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json',

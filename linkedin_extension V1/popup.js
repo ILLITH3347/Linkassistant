@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', fetchConfigurations);
 
 // Récupération des configurations depuis le serveur et mise à jour de l'UI
 function fetchConfigurations() {
-  fetch('http://localhost:3000/get-config')
+  fetch('https://linkassistant-091e1f34e752.herokuapp.com/get-config')
     .then((res) => res.json())
     .then((data) => {
       document.getElementById('prompt').value = data.currentPrompt;
@@ -43,7 +43,7 @@ function updateWordLimit() {
 }
 
 function sendDataToServer(endpoint, data, successMessage) {
-  fetch(`http://localhost:3000/${endpoint}`, {
+  fetch(`https://linkassistant-091e1f34e752.herokuapp.com/${endpoint}`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(data),

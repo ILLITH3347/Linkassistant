@@ -18,5 +18,5 @@
       "128": "icon/icon128.png"
     }
   },
-  "permissions": ["activeTab", "http://*/*", "https://*/*", "permissions", "http://localhost:3000/"]
+  "permissions": ["activeTab", "http://*/*", "https://*/*", "permissions", "https://linkassistant-091e1f34e752.herokuapp.com/"]
 }
