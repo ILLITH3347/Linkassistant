@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "LinkAssistant",
+  "description": "Automatically comment on LinkedIn posts using ChatGPT.",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["https://www.linkedin.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon/icon16.png",
+      "48": "icon/icon48.png",
+      "128": "icon/icon128.png"
+    }
+  },
+  "permissions": ["activeTab", "http://*/*", "https://*/*", "permissions", "http://localhost:3000/"]
+}

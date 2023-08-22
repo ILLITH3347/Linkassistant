@@ -1,0 +1,91 @@
+body {
+    background: #0b67c2;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 15px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin: 0 0 10px;
+  }
+  
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  button#commentButton {
+    background: #ffffff;
+    border: none;
+    color: #5E5AE6;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  
+  button#commentButton:hover {
+    background: #f0f0f0;
+  }
+
+  
+  /* Styles pour le bouton LinkAssistant */
+.linkassistant-button {
+    background-color: #E6007E;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 5px;
+  }
+  
+  .linkassistant-button:hover {
+    background-color: #E6007E;
+  }
+  
+  /* Styles pour le bouton déroulant LinkAssistant */
+  .linkassistant-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    bottom: 100%;  /* Cette ligne fait se dérouler le menu vers le haut */
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10; /* S'assurer que le menu déroulant est au-dessus des autres éléments */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropbtn {
+    background-color: #E6007E;
+    color: white;
+    padding: 6px;
+    font-size: 9px;
+    border-radius: 15px;
+    cursor: pointer;  
+    margin-right: 5px;
+
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #E6007E;
+}

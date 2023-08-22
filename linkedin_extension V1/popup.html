@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extension Configuration</title>
+    <style>
+        body {
+            width: 500px;  /* Ajustez la largeur selon vos préférences */
+            height: 600px; 
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            background-color: #f5f5f5;
+        }
+
+        img#logo {
+            display: block;
+            margin: 0 auto;
+            width: 130px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input[type="text"], input[type="number"], button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        button {
+            background-color: #ff66b2;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff3385;
+        }
+
+        #status {
+            margin-top: 15px;
+            text-align: center;
+            font-weight: bold;
+            color: #ff66b2;
+        }
+    </style>
+</head>
+<body>
+
+<img id="logo" src="/icon/logo.png" alt="Logo">
+
+<div class="container">
+    <div class="input-group">
+        <label for="prompt">Prompt actuel :</label>
+        <input type="text" id="prompt">
+    </div>
+
+    <div class="input-group">
+        <button id="update-prompt">Mettre à jour le prompt</button>
+    </div>
+
+    <div class="input-group">
+        <button id="reset-prompt">Réinitialiser le prompt</button>
+    </div>
+
+    <div class="input-group">
+        <label for="api-key">Clé API :</label>
+        <input type="text" id="api-key">
+    </div>
+
+    <div class="input-group">
+        <button id="save-api-key">Enregistrer la clé API</button>
+    </div>
+
+    <div class="input-group">
+        <label for="wordLimit">Limite de mots :</label>
+        <input type="number" id="wordLimit">
+    </div>
+
+    <div class="input-group">
+        <button id="update-word-limit">Mettre à jour la limite de mots</button>
+    </div>
+
+    <div id="status"></div>
+</div>
+
+<script src="popup.js"></script>
+
+</body>
+</html>
